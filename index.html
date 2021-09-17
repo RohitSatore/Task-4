@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- CSS Stylssheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <h1>Music Player</h1> 
+
+    <div class="row con">
+        <div class="con1 col-lg-8">
+            <div class="row">
+                <div class="con11 img-con col-lg-4">
+                    <img id="img" src="images/m.jpg" alt="m1">
+                </div>
+                <div class="con12 col-lg-8">
+                    <p class="songName">Song Name: <span class="color" id="songName"></span></p>
+                    <p class="movieName">Movie Name: <span class="color" id="movie"></span></p>
+                    <p class="singerName">Singer Name: <span class="color" id="singer"></span></p>
+                    <p class="Duration">Duration: <span class="color" id="duration"></span></p>
+                </div>
+            </div>
+
+            <audio src="Music/m1.mp3"></audio>
+
+            <div class="play-buttons">
+                <i class="fas fa-arrow-left prev" id="prev"></i>
+                <i class="fas fa-play play-pause" id="myPlay"></i>
+                <i class="fas fa-arrow-right next" id="next"></i>
+            </div>
+
+        </div>
+        <div class="playlist con2 col-lg-4">
+            <div class="play-song" id="m1" onclick="playSelected(this)">
+                <img class="play-img" src="images/m1.jpg" alt="">
+                <span>Phir Bhi Aas Lagi Hai Dil Mein</span>
+            </div>
+            <div class="play-song" id="m2" onclick="playSelected(this)">
+                <img class="play-img" src="images/m2.jpg" alt="">
+                <span>Is Qadar - Darshan Raval</span>
+            </div>
+            <div class="play-song" id="m3" onclick="playSelected(this)">
+                <img class="play-img" src="images/m3.jpg" alt="">
+                <span>Tujhe Bhoolna Toh Chaaha </span>
+            </div>
+            <div class="play-song" id="m4" onclick="playSelected(this)">
+                <img class="play-img" src="images/m4.jpg" alt="">
+                <span>Oye Hoye Hoye - Jassie Gill</span>
+            </div>
+            <div class="play-song" id="m5" onclick="playSelected(this)">
+                <img class="play-img" src="images/m5.jpg" alt="">
+                <span>Birthday Pawri - Meet Bros</span>
+            </div>
+            <div class="play-song" id="m6" onclick="playSelected(this)">
+                <img class="play-img" src="images/m6.jpg" alt="">
+                <span>Kutti Mohabbat</span>
+            </div>
+        </div>
+    </div>
+
+     <!-- Linking bootstrap JS -->
+     <script
+     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+     crossorigin="anonymous"
+   ></script>
+   <!-- linking jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- linking javascript -->
+   <script src="index.js"></script>
+</body>
+
+</html> 
